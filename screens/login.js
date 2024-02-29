@@ -45,7 +45,7 @@ const LoginScreen = () => {
       </TouchableOpacity>
       <View style={{flexDirection:'row'}}>
         <Text style={{ fontSize: 12, color: "gray" }}>Bạn chưa có tài khoản ? </Text>
-        <TouchableOpacity onPress={()=> nav.navigate('register2')}>
+        <TouchableOpacity onPress={()=> nav.navigate('register')}>
         <Text style={{fontSize:13,fontWeight:'bold',color:'#ff8c00'}}>Đăng ký</Text>
       </TouchableOpacity>
       </View>
