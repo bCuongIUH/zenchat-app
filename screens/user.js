@@ -21,6 +21,10 @@ const User = () => {
   const handleSearchIconPress = () => {
     setIsSearching(!isSearching);
   };
+  const user = {
+    // Thay thế đường dẫn hình ảnh bằng đường dẫn thực của hình ảnh cá nhân
+    imageUrl: 'https://res.cloudinary.com/dhpqoqtgx/image/upload/v1709272691/ywgngx6l24nrwylcp2ta.jpg',
+  };
 
   return (
     <SafeAreaView style={styles.container}>
@@ -54,10 +58,16 @@ const User = () => {
       {/* ------------------------------------------------------Body---------------------------------------------------- */}
       <View style={styles.body}>
         <View>
-        <TouchableOpacity>
+        <Image source={{ uri: user.imageUrl }} style={styles.avatar} />
+
+
+        {/* <TouchableOpacity>
         <FontAwesome name="user" size={40} color="black" />
-        </TouchableOpacity>
+        </TouchableOpacity> */}
+        
         </View>
+
+
        
         <TouchableOpacity 
         onPress={()=>nav.navigate('inf')}
@@ -151,10 +161,18 @@ const styles = StyleSheet.create({
     alignItems:'center'
   },
   avt: {
+   
     margin: 20,
     resizeMode: "contain",
     height: 100,
     width: 100,
+  },
+  avatar: {
+    marginTop:20,
+    width: 150,
+    height: 150,
+    borderRadius: 75,
+    marginBottom: 20,
   },
   option:{
     width:"100%",

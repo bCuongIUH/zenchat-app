@@ -77,9 +77,11 @@ const Chatpage = () => {
               style={styles.modalbtn}
               onPress={handleCreateChatPress}
             >
-              <Text style={styles.modalOption}>Tạo cuộc trò chuyện mới</Text>
-            </TouchableOpacity>
-           
+
+            {/* test 1.3 */}
+              {/* <Text onPress={()=>nav.navigate("addchat")} style={styles.modalOption}>Tạo cuộc trò chuyện mới</Text>      */}
+              <Text  style={styles.modalOption}>Tạo cuộc trò chuyện mới</Text>     
+            </TouchableOpacity>     
             <TouchableOpacity
               style={styles.modalbtn}
               onPress={handleModalClose}

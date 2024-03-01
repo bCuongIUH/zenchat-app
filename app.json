@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "myChat",
-    "slug": "myChat",
+    "name": "ZenChat",
+    "slug": "ZenChat",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

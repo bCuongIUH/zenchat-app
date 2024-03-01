@@ -9,6 +9,8 @@ import user from "./screens/user"
 import inf from "./screens/inf"
 import Time from "./screens/time";
 import forgotPasswordScreen from "./screens/forgotPasswordScreen";
+//import addchat from "./screens/addchat";
+import AddFriendsScreen from "./screens/AddFriendsScreen";
 
 
 export default function App() {
@@ -16,7 +18,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator
-        initialRouteName="login2"
+        initialRouteName="login"
         screenOptions={{ headerShown: false }}
       >
         <Stack.Screen component={login} name="login" />
@@ -28,6 +30,8 @@ export default function App() {
         <Stack.Screen component={Time} name="time" />
         {/* <Stack.Screen component={confirm} name="confirm" /> */}
         <Stack.Screen component={forgotPasswordScreen} name="forgotPasswordScreen" />
+        <Stack.Screen component={AddFriendsScreen} name="AddFriendsScreen" />
+        {/* <Stack.Screen component={addchat} name="addchat" /> */}
       </Stack.Navigator>
     </NavigationContainer>
   );
